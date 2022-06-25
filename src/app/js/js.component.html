@@ -1,0 +1,41 @@
+<h1 style="color:black;text-decoration-line: underline;font-family: cursive;">Example of Form field</h1>
+<div style="background-color:crimson;width: 400px;margin-left: 10%;">
+    <mat-form-field appearance="legacy">
+    <mat-label>Input</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="legacy">
+    <mat-label>Select</mat-label>
+    <mat-select>
+      <mat-option value="one">First option</mat-option>
+      <mat-option value="two">Second option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+ 
+  <mat-form-field appearance="legacy">
+    <mat-label>Textarea</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+</div>
+<h1 style="color:black;text-decoration-line: underline;font-family: cursive;">Example of check box </h1>
+<div style="background-color:darkcyan;width: 400px;margin-left: 10%;color: black;">
+    <section >
+      <mat-checkbox style="border-color: black;">Check me!</mat-checkbox><br>
+      <mat-checkbox style="color: blue;" disabled >Disabled</mat-checkbox>
+    </section>
+  </div>
+  <h1 style="color:black;text-decoration-line: underline;font-family: cursive;">Example of List selection </h1>
+  <div style="background-color: black;width: 400px;margin-left: 10%;">
+  <mat-selection-list #shoes>
+    <mat-list-option *ngFor="let shoe of typesOfShoes">
+      {{shoe}}
+    </mat-list-option>
+  </mat-selection-list>
+  
+  <p>
+    Options selected: {{shoes.selectedOptions.selected.length}}
+  </p>
+</div>
+  
